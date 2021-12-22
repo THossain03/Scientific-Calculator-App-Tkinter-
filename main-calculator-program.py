@@ -292,7 +292,7 @@ button_brack_open = Button(board, text="(", font=28, width=14, command=lambda: b
 button_brack_close = Button(board, text=")", font=28, width=14, command=lambda: button_click(")"))
 button_decimal = Button(board, text=".", font=50, width=14, command=lambda: button_click("."))
 button_access_ANS = Button(board, text="ANS", font=28, width=14, command=lambda: button_click(previousAns))
-button_equal = Button(board, text="=", font=20, width=14, command=calculate_it)
+button_equal = Button(board, text="=", font=20, width=29, command=calculate_it)
 button_clear = Button(board, text="C", font=16, width=14, command=clear_it)
 button_delete = Button(board, text="DEL", font=28, width=14, command=delete_button_click)
 button_reciprocal = Button(board, text="1/n", font=28, width=14, command=reciprocal)
@@ -320,56 +320,59 @@ button_ceiling = Button(board, text="⌈x⌉", font=28, width=14, command=lambda
 button_degree_or_radian = Button(board, text="Deg", font=('arial',16,'bold'), width=14, command=deg_rad)
 
 
-#-------------------------------------------------------------
-button_access_ANS.grid(row=1, column=0)
-button_brack_open.grid(row=1,column=1)
-button_brack_close.grid(row=1, column=2)
-button_plus.grid(row=1,column=3)
-#------------------------------------------------------------
-button_7.grid(row=2,column=0)
-button_8.grid(row=2,column=1)
-button_9.grid(row=2,column=2)
-button_minus.grid(row=2,column=3)
-#-------------------------------------------------------------
-button_4.grid(row=3,column=0)
-button_5.grid(row=3,column=1)
-button_6.grid(row=3,column=2)
-button_multiply.grid(row=3,column=3)
-#-------------------------------------------------------------
-button_1.grid(row=4,column=0)
-button_2.grid(row=4,column=1)
-button_3.grid(row=4,column=2)
-button_divide.grid(row=4,column=3)
-#--------------------------------------------------------------
-button_clear.grid(row=5,column=0)
-button_0.grid(row=5,column=1)
-button_decimal.grid(row=5, column=2)
-button_equal.grid(row=5,column=3)
-#-------------------------------------------------------------
-#To-Add:
-button_delete.grid(row=6, column=0)
-button_reciprocal.grid(row=6, column=1)
-button_10_exp.grid(row=6,column=3)
-button_abs.grid(row=6, column=2)
-button_pi.grid(row=7, column=0)
-button_e.grid(row=7,column=1)
-button_factorial.grid(row=7, column=2)
-button_modulus.grid(row=7,column=3)
-button_degree_or_radian.grid(row=8,column=0,columnspan=4)
-button_sine.grid(row=9,column=0)
-button_cosine.grid(row=9, column=1)
-button_tan.grid(row=9, column=2)
-button_arcsine.grid(row=10, column=0)
-button_arccosine.grid(row=10, column=1)
-button_arctan.grid(row=10, column=2)
-button_squared.grid(row=6,column=6)
-button_squareRoot.grid(row=6,column=7)
-button_nth_exponent.grid(row=7,column=6)
-button_nth_root.grid(row=7,column=7)
-button_log.grid(row=8, column=6)
-button_ln.grid(row=8, column=7)
-button_ceiling.grid(row=9,column=6)
-button_floor.grid(row=9,column=7)
+#ROW1 and ROW2----------------------------------------------------
+button_clear.grid(row=1,column=3,columnspan=2)
+button_delete.grid(row=2, column=3,columnspan=2)
+button_degree_or_radian.grid(row=1,column=0,columnspan=2)
+button_modulus.grid(row=2,column=0, columnspan=2)
+#ROW3-------------------------------------------------------------
+button_abs.grid(row=3, column=0)
+button_reciprocal.grid(row=3, column=1)
+button_10_exp.grid(row=3,column=2)
+button_pi.grid(row=3, column=3)
+button_e.grid(row=3,column=4)
+#ROW4-------------------------------------------------------------
+button_sine.grid(row=4,column=0)
+button_cosine.grid(row=4, column=1)
+button_tan.grid(row=4, column=2)
+button_log.grid(row=4, column=3)
+button_ln.grid(row=4, column=4)
+#ROW5-------------------------------------------------------------
+button_arcsine.grid(row=5, column=0)
+button_arccosine.grid(row=5, column=1)
+button_arctan.grid(row=5, column=2)
+button_squared.grid(row=5,column=3)
+button_squareRoot.grid(row=5,column=4)
+#ROW6-------------------------------------------------------------
+button_factorial.grid(row=6, column=0)
+button_ceiling.grid(row=6,column=1)
+button_floor.grid(row=6,column=2)
+button_nth_exponent.grid(row=6,column=3)
+button_nth_root.grid(row=6,column=4)
+#ROW7-------------------------------------------------------------
+button_7.grid(row=7,column=0)
+button_8.grid(row=7,column=1)
+button_9.grid(row=7,column=2)
+button_brack_open.grid(row=7,column=3)
+button_brack_close.grid(row=7, column=4)
+#ROW8-------------------------------------------------------------
+button_4.grid(row=8,column=0)
+button_5.grid(row=8,column=1)
+button_6.grid(row=8,column=2)
+button_plus.grid(row=8,column=3)
+button_minus.grid(row=8,column=4)
+#ROW9-------------------------------------------------------------
+button_1.grid(row=9,column=0)
+button_2.grid(row=9,column=1)
+button_3.grid(row=9,column=2)
+button_multiply.grid(row=9,column=3)
+button_divide.grid(row=9,column=4)
+#ROW10-------------------------------------------------------------
+button_decimal.grid(row=10, column=0)
+button_0.grid(row=10,column=1)
+button_access_ANS.grid(row=10, column=2)
+button_equal.grid(row=10,column=3, columnspan=2)
+
 
 
 board.mainloop()
