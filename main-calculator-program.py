@@ -214,7 +214,6 @@ def calculate_it():
         previousAns = answer
         operator=answer 
     else:
-        previousAns=""
         operator=""
 
 def reciprocal ():
