@@ -1,4 +1,4 @@
 from tkinter import *
 root = Tk()
 hello = Label(root, text=u'% Change = (y\u1d62-y\u2080)/y\u2080 \u00d7100').pack()
-root.mainloop()
+root.mainloop() 

@@ -320,7 +320,7 @@ button_ceiling = Button(board, text="⌈x⌉", font=28, width=14, command=lambda
 button_degree_or_radian = Button(board, text="Deg", font=('arial',16,'bold'), width=14, command=deg_rad)
 
 
-#ROW1 and ROW2----------------------------------------------------
+#ROW1 and ROW2-----------------------------------------------------
 button_clear.grid(row=1,column=3,columnspan=2)
 button_delete.grid(row=2, column=3,columnspan=2)
 button_degree_or_radian.grid(row=1,column=0,columnspan=2)
